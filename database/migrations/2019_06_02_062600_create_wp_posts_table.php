@@ -16,8 +16,8 @@ class CreateWpPostsTable extends Migration {
 		{
 			$table->bigInteger('ID', true)->unsigned();
 			$table->bigInteger('post_author')->unsigned()->default(0)->index('post_author');
-			$table->dateTime('post_date')->default('0000-00-00 00:00:00');
-			$table->dateTime('post_date_gmt')->default('0000-00-00 00:00:00');
+			$table->dateTime('post_date')->default('0001-01-01 00:00:00');
+			$table->dateTime('post_date_gmt')->default('0001-01-01 00:00:00');
 			$table->text('post_content');
 			$table->text('post_title', 65535);
 			$table->text('post_excerpt', 65535);
@@ -28,8 +28,8 @@ class CreateWpPostsTable extends Migration {
 			$table->string('post_name', 200)->default('')->index('post_name');
 			$table->text('to_ping', 65535);
 			$table->text('pinged', 65535);
-			$table->dateTime('post_modified')->default('0000-00-00 00:00:00');
-			$table->dateTime('post_modified_gmt')->default('0000-00-00 00:00:00');
+			$table->dateTime('post_modified')->default('0001-01-01 00:00:00');
+			$table->dateTime('post_modified_gmt')->default('0001-01-01 00:00:00');
 			$table->text('post_content_filtered');
 			$table->bigInteger('post_parent')->unsigned()->default(0)->index('post_parent');
 			$table->string('guid')->default('');
