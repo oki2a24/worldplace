@@ -30,7 +30,7 @@ class CreateWpPostsTable extends Migration {
 			$table->text('pinged', 65535);
 			$table->dateTime('post_modified')->default('0001-01-01 00:00:00');
 			$table->dateTime('post_modified_gmt')->default('0001-01-01 00:00:00');
-			$table->text('post_content_filtered');
+			$table->longText('post_content_filtered');
 			$table->bigInteger('post_parent')->unsigned()->default(0)->index('post_parent');
 			$table->string('guid')->default('');
 			$table->integer('menu_order')->default(0);

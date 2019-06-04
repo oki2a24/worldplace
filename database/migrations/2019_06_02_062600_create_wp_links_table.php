@@ -25,7 +25,7 @@ class CreateWpLinksTable extends Migration {
 			$table->integer('link_rating')->default(0);
 			$table->dateTime('link_updated')->default('0001-01-01 00:00:00');
 			$table->string('link_rel')->default('');
-			$table->text('link_notes', 16777215);
+			$table->mediumText('link_notes', 16777215);
 			$table->string('link_rss')->default('');
 		});
 	}
