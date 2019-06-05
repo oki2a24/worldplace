@@ -22,7 +22,7 @@ class CreateWpCommentsTable extends Migration {
 			$table->string('comment_author_IP', 100)->default('');
 			$table->dateTime('comment_date')->default('0001-01-01 00:00:00');
 			$table->dateTime('comment_date_gmt')->default('0001-01-01 00:00:00')->index('comment_date_gmt');
-			$table->text('comment_content', 65535);
+			$table->text('comment_content');
 			$table->integer('comment_karma')->default(0);
 			$table->string('comment_approved', 20)->default('1');
 			$table->string('comment_agent')->default('');

@@ -16,7 +16,7 @@ class CreateWpOptionsTable extends Migration {
 		{
 			$table->bigInteger('option_id', true)->unsigned();
 			$table->string('option_name', 191)->default('')->unique('option_name');
-			$table->text('option_value');
+			$table->longText('option_value');
 			$table->string('autoload', 20)->default('yes');
 		});
 	}

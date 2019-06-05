@@ -17,7 +17,7 @@ class CreateWpUsermetaTable extends Migration {
 			$table->bigInteger('umeta_id', true)->unsigned();
 			$table->bigInteger('user_id')->unsigned()->default(0)->index('user_id');
 			$table->string('meta_key')->nullable()->index('meta_key');
-			$table->text('meta_value')->nullable();
+			$table->longText('meta_value')->nullable();
 		});
 	}
 
