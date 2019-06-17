@@ -71,6 +71,8 @@ return PhpCsFixer\Config::create()
         'whitespace_after_comma_in_array' => true,
     ])
     ->setFinder(PhpCsFixer\Finder::create()
+        ->exclude('bootstrap/cache')
+        ->exclude('storage/framework/views')
         ->exclude('vendor')
         ->in(__DIR__)
     )
