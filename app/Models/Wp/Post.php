@@ -5,8 +5,8 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property integer $ID
- * @property integer $post_author
+ * @property int $ID
+ * @property int $post_author
  * @property string $post_date
  * @property string $post_date_gmt
  * @property string $post_content
@@ -22,32 +22,32 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $post_modified
  * @property string $post_modified_gmt
  * @property string $post_content_filtered
- * @property integer $post_parent
+ * @property int $post_parent
  * @property string $guid
  * @property int $menu_order
  * @property string $post_type
  * @property string $post_mime_type
- * @property integer $comment_count
+ * @property int $comment_count
  */
 class Post extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'wp_posts';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'ID';
 
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -59,9 +59,8 @@ class Post extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
-
 }

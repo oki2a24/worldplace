@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class WpCommentsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class WpCommentsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('wp_comments')->delete();
-        
-        \DB::table('wp_comments')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('wp_comments')->insert([
+            0 => [
                 'comment_ID' => 1,
                 'comment_post_ID' => 1,
                 'comment_author' => 'WordPress コメントの投稿者',
@@ -36,9 +32,7 @@ class WpCommentsTableSeeder extends Seeder
                 'comment_type' => '',
                 'comment_parent' => 0,
                 'user_id' => 0,
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

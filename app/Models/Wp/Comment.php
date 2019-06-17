@@ -5,8 +5,8 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property integer $comment_ID
- * @property integer $comment_post_ID
+ * @property int $comment_ID
+ * @property int $comment_post_ID
  * @property string $comment_author
  * @property string $comment_author_email
  * @property string $comment_author_url
@@ -18,28 +18,28 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $comment_approved
  * @property string $comment_agent
  * @property string $comment_type
- * @property integer $comment_parent
- * @property integer $user_id
+ * @property int $comment_parent
+ * @property int $user_id
  */
 class Comment extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'wp_comments';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'comment_ID';
 
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -51,9 +51,8 @@ class Comment extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
-
 }

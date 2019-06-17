@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class WpPostsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class WpPostsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('wp_posts')->delete();
-        
-        \DB::table('wp_posts')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('wp_posts')->insert([
+            0 => [
                 'ID' => 1,
                 'post_author' => 1,
                 'post_date' => '2019-06-02 10:24:29',
@@ -44,9 +40,8 @@ class WpPostsTableSeeder extends Seeder
                 'post_type' => 'post',
                 'post_mime_type' => '',
                 'comment_count' => 1,
-            ),
-            1 => 
-            array (
+            ],
+            1 => [
                 'ID' => 2,
                 'post_author' => 1,
                 'post_date' => '2019-06-02 10:24:29',
@@ -88,9 +83,8 @@ class WpPostsTableSeeder extends Seeder
                 'post_type' => 'page',
                 'post_mime_type' => '',
                 'comment_count' => 0,
-            ),
-            2 => 
-            array (
+            ],
+            2 => [
                 'ID' => 3,
                 'post_author' => 1,
                 'post_date' => '2019-06-02 10:24:29',
@@ -114,9 +108,8 @@ class WpPostsTableSeeder extends Seeder
                 'post_type' => 'page',
                 'post_mime_type' => '',
                 'comment_count' => 0,
-            ),
-            3 => 
-            array (
+            ],
+            3 => [
                 'ID' => 4,
                 'post_author' => 1,
                 'post_date' => '2019-06-02 10:24:42',
@@ -140,9 +133,7 @@ class WpPostsTableSeeder extends Seeder
                 'post_type' => 'post',
                 'post_mime_type' => '',
                 'comment_count' => 0,
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

@@ -5,7 +5,7 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property integer $option_id
+ * @property int $option_id
  * @property string $option_name
  * @property string $option_value
  * @property string $autoload
@@ -14,21 +14,21 @@ class Option extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'wp_options';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'option_id';
 
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -40,9 +40,8 @@ class Option extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
-
 }
