@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class WpOptionsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,853 +11,730 @@ class WpOptionsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('wp_options')->delete();
-        
-        \DB::table('wp_options')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('wp_options')->insert([
+            0 => [
                 'option_id' => 1,
                 'option_name' => 'siteurl',
                 'option_value' => 'http://localhost:8080',
                 'autoload' => 'yes',
-            ),
-            1 => 
-            array (
+            ],
+            1 => [
                 'option_id' => 2,
                 'option_name' => 'home',
                 'option_value' => 'http://localhost:8080',
                 'autoload' => 'yes',
-            ),
-            2 => 
-            array (
+            ],
+            2 => [
                 'option_id' => 3,
                 'option_name' => 'blogname',
                 'option_value' => 'sample',
                 'autoload' => 'yes',
-            ),
-            3 => 
-            array (
+            ],
+            3 => [
                 'option_id' => 4,
                 'option_name' => 'blogdescription',
                 'option_value' => 'Just another WordPress site',
                 'autoload' => 'yes',
-            ),
-            4 => 
-            array (
+            ],
+            4 => [
                 'option_id' => 5,
                 'option_name' => 'users_can_register',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            5 => 
-            array (
+            ],
+            5 => [
                 'option_id' => 6,
                 'option_name' => 'admin_email',
                 'option_value' => 'sample@example.com',
                 'autoload' => 'yes',
-            ),
-            6 => 
-            array (
+            ],
+            6 => [
                 'option_id' => 7,
                 'option_name' => 'start_of_week',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            7 => 
-            array (
+            ],
+            7 => [
                 'option_id' => 8,
                 'option_name' => 'use_balanceTags',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            8 => 
-            array (
+            ],
+            8 => [
                 'option_id' => 9,
                 'option_name' => 'use_smilies',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            9 => 
-            array (
+            ],
+            9 => [
                 'option_id' => 10,
                 'option_name' => 'require_name_email',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            10 => 
-            array (
+            ],
+            10 => [
                 'option_id' => 11,
                 'option_name' => 'comments_notify',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            11 => 
-            array (
+            ],
+            11 => [
                 'option_id' => 12,
                 'option_name' => 'posts_per_rss',
                 'option_value' => '10',
                 'autoload' => 'yes',
-            ),
-            12 => 
-            array (
+            ],
+            12 => [
                 'option_id' => 13,
                 'option_name' => 'rss_use_excerpt',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            13 => 
-            array (
+            ],
+            13 => [
                 'option_id' => 14,
                 'option_name' => 'mailserver_url',
                 'option_value' => 'mail.example.com',
                 'autoload' => 'yes',
-            ),
-            14 => 
-            array (
+            ],
+            14 => [
                 'option_id' => 15,
                 'option_name' => 'mailserver_login',
                 'option_value' => 'login@example.com',
                 'autoload' => 'yes',
-            ),
-            15 => 
-            array (
+            ],
+            15 => [
                 'option_id' => 16,
                 'option_name' => 'mailserver_pass',
                 'option_value' => 'password',
                 'autoload' => 'yes',
-            ),
-            16 => 
-            array (
+            ],
+            16 => [
                 'option_id' => 17,
                 'option_name' => 'mailserver_port',
                 'option_value' => '110',
                 'autoload' => 'yes',
-            ),
-            17 => 
-            array (
+            ],
+            17 => [
                 'option_id' => 18,
                 'option_name' => 'default_category',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            18 => 
-            array (
+            ],
+            18 => [
                 'option_id' => 19,
                 'option_name' => 'default_comment_status',
                 'option_value' => 'open',
                 'autoload' => 'yes',
-            ),
-            19 => 
-            array (
+            ],
+            19 => [
                 'option_id' => 20,
                 'option_name' => 'default_ping_status',
                 'option_value' => 'open',
                 'autoload' => 'yes',
-            ),
-            20 => 
-            array (
+            ],
+            20 => [
                 'option_id' => 21,
                 'option_name' => 'default_pingback_flag',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            21 => 
-            array (
+            ],
+            21 => [
                 'option_id' => 22,
                 'option_name' => 'posts_per_page',
                 'option_value' => '10',
                 'autoload' => 'yes',
-            ),
-            22 => 
-            array (
+            ],
+            22 => [
                 'option_id' => 23,
                 'option_name' => 'date_format',
                 'option_value' => 'Y年n月j日',
                 'autoload' => 'yes',
-            ),
-            23 => 
-            array (
+            ],
+            23 => [
                 'option_id' => 24,
                 'option_name' => 'time_format',
                 'option_value' => 'g:i A',
                 'autoload' => 'yes',
-            ),
-            24 => 
-            array (
+            ],
+            24 => [
                 'option_id' => 25,
                 'option_name' => 'links_updated_date_format',
                 'option_value' => 'Y年n月j日 g:i A',
                 'autoload' => 'yes',
-            ),
-            25 => 
-            array (
+            ],
+            25 => [
                 'option_id' => 26,
                 'option_name' => 'comment_moderation',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            26 => 
-            array (
+            ],
+            26 => [
                 'option_id' => 27,
                 'option_name' => 'moderation_notify',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            27 => 
-            array (
+            ],
+            27 => [
                 'option_id' => 28,
                 'option_name' => 'permalink_structure',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            28 => 
-            array (
+            ],
+            28 => [
                 'option_id' => 29,
                 'option_name' => 'rewrite_rules',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            29 => 
-            array (
+            ],
+            29 => [
                 'option_id' => 30,
                 'option_name' => 'hack_file',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            30 => 
-            array (
+            ],
+            30 => [
                 'option_id' => 31,
                 'option_name' => 'blog_charset',
                 'option_value' => 'UTF-8',
                 'autoload' => 'yes',
-            ),
-            31 => 
-            array (
+            ],
+            31 => [
                 'option_id' => 32,
                 'option_name' => 'moderation_keys',
                 'option_value' => '',
                 'autoload' => 'no',
-            ),
-            32 => 
-            array (
+            ],
+            32 => [
                 'option_id' => 33,
                 'option_name' => 'active_plugins',
                 'option_value' => 'a:0:{}',
                 'autoload' => 'yes',
-            ),
-            33 => 
-            array (
+            ],
+            33 => [
                 'option_id' => 34,
                 'option_name' => 'category_base',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            34 => 
-            array (
+            ],
+            34 => [
                 'option_id' => 35,
                 'option_name' => 'ping_sites',
                 'option_value' => 'http://rpc.pingomatic.com/',
                 'autoload' => 'yes',
-            ),
-            35 => 
-            array (
+            ],
+            35 => [
                 'option_id' => 36,
                 'option_name' => 'comment_max_links',
                 'option_value' => '2',
                 'autoload' => 'yes',
-            ),
-            36 => 
-            array (
+            ],
+            36 => [
                 'option_id' => 37,
                 'option_name' => 'gmt_offset',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            37 => 
-            array (
+            ],
+            37 => [
                 'option_id' => 38,
                 'option_name' => 'default_email_category',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            38 => 
-            array (
+            ],
+            38 => [
                 'option_id' => 39,
                 'option_name' => 'recently_edited',
                 'option_value' => '',
                 'autoload' => 'no',
-            ),
-            39 => 
-            array (
+            ],
+            39 => [
                 'option_id' => 40,
                 'option_name' => 'template',
                 'option_value' => 'twentynineteen',
                 'autoload' => 'yes',
-            ),
-            40 => 
-            array (
+            ],
+            40 => [
                 'option_id' => 41,
                 'option_name' => 'stylesheet',
                 'option_value' => 'twentynineteen',
                 'autoload' => 'yes',
-            ),
-            41 => 
-            array (
+            ],
+            41 => [
                 'option_id' => 42,
                 'option_name' => 'comment_whitelist',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            42 => 
-            array (
+            ],
+            42 => [
                 'option_id' => 43,
                 'option_name' => 'blacklist_keys',
                 'option_value' => '',
                 'autoload' => 'no',
-            ),
-            43 => 
-            array (
+            ],
+            43 => [
                 'option_id' => 44,
                 'option_name' => 'comment_registration',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            44 => 
-            array (
+            ],
+            44 => [
                 'option_id' => 45,
                 'option_name' => 'html_type',
                 'option_value' => 'text/html',
                 'autoload' => 'yes',
-            ),
-            45 => 
-            array (
+            ],
+            45 => [
                 'option_id' => 46,
                 'option_name' => 'use_trackback',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            46 => 
-            array (
+            ],
+            46 => [
                 'option_id' => 47,
                 'option_name' => 'default_role',
                 'option_value' => 'subscriber',
                 'autoload' => 'yes',
-            ),
-            47 => 
-            array (
+            ],
+            47 => [
                 'option_id' => 48,
                 'option_name' => 'db_version',
                 'option_value' => '44719',
                 'autoload' => 'yes',
-            ),
-            48 => 
-            array (
+            ],
+            48 => [
                 'option_id' => 49,
                 'option_name' => 'uploads_use_yearmonth_folders',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            49 => 
-            array (
+            ],
+            49 => [
                 'option_id' => 50,
                 'option_name' => 'upload_path',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            50 => 
-            array (
+            ],
+            50 => [
                 'option_id' => 51,
                 'option_name' => 'blog_public',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            51 => 
-            array (
+            ],
+            51 => [
                 'option_id' => 52,
                 'option_name' => 'default_link_category',
                 'option_value' => '2',
                 'autoload' => 'yes',
-            ),
-            52 => 
-            array (
+            ],
+            52 => [
                 'option_id' => 53,
                 'option_name' => 'show_on_front',
                 'option_value' => 'posts',
                 'autoload' => 'yes',
-            ),
-            53 => 
-            array (
+            ],
+            53 => [
                 'option_id' => 54,
                 'option_name' => 'tag_base',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            54 => 
-            array (
+            ],
+            54 => [
                 'option_id' => 55,
                 'option_name' => 'show_avatars',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            55 => 
-            array (
+            ],
+            55 => [
                 'option_id' => 56,
                 'option_name' => 'avatar_rating',
                 'option_value' => 'G',
                 'autoload' => 'yes',
-            ),
-            56 => 
-            array (
+            ],
+            56 => [
                 'option_id' => 57,
                 'option_name' => 'upload_url_path',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            57 => 
-            array (
+            ],
+            57 => [
                 'option_id' => 58,
                 'option_name' => 'thumbnail_size_w',
                 'option_value' => '150',
                 'autoload' => 'yes',
-            ),
-            58 => 
-            array (
+            ],
+            58 => [
                 'option_id' => 59,
                 'option_name' => 'thumbnail_size_h',
                 'option_value' => '150',
                 'autoload' => 'yes',
-            ),
-            59 => 
-            array (
+            ],
+            59 => [
                 'option_id' => 60,
                 'option_name' => 'thumbnail_crop',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            60 => 
-            array (
+            ],
+            60 => [
                 'option_id' => 61,
                 'option_name' => 'medium_size_w',
                 'option_value' => '300',
                 'autoload' => 'yes',
-            ),
-            61 => 
-            array (
+            ],
+            61 => [
                 'option_id' => 62,
                 'option_name' => 'medium_size_h',
                 'option_value' => '300',
                 'autoload' => 'yes',
-            ),
-            62 => 
-            array (
+            ],
+            62 => [
                 'option_id' => 63,
                 'option_name' => 'avatar_default',
                 'option_value' => 'mystery',
                 'autoload' => 'yes',
-            ),
-            63 => 
-            array (
+            ],
+            63 => [
                 'option_id' => 64,
                 'option_name' => 'large_size_w',
                 'option_value' => '1024',
                 'autoload' => 'yes',
-            ),
-            64 => 
-            array (
+            ],
+            64 => [
                 'option_id' => 65,
                 'option_name' => 'large_size_h',
                 'option_value' => '1024',
                 'autoload' => 'yes',
-            ),
-            65 => 
-            array (
+            ],
+            65 => [
                 'option_id' => 66,
                 'option_name' => 'image_default_link_type',
                 'option_value' => 'none',
                 'autoload' => 'yes',
-            ),
-            66 => 
-            array (
+            ],
+            66 => [
                 'option_id' => 67,
                 'option_name' => 'image_default_size',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            67 => 
-            array (
+            ],
+            67 => [
                 'option_id' => 68,
                 'option_name' => 'image_default_align',
                 'option_value' => '',
                 'autoload' => 'yes',
-            ),
-            68 => 
-            array (
+            ],
+            68 => [
                 'option_id' => 69,
                 'option_name' => 'close_comments_for_old_posts',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            69 => 
-            array (
+            ],
+            69 => [
                 'option_id' => 70,
                 'option_name' => 'close_comments_days_old',
                 'option_value' => '14',
                 'autoload' => 'yes',
-            ),
-            70 => 
-            array (
+            ],
+            70 => [
                 'option_id' => 71,
                 'option_name' => 'thread_comments',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            71 => 
-            array (
+            ],
+            71 => [
                 'option_id' => 72,
                 'option_name' => 'thread_comments_depth',
                 'option_value' => '5',
                 'autoload' => 'yes',
-            ),
-            72 => 
-            array (
+            ],
+            72 => [
                 'option_id' => 73,
                 'option_name' => 'page_comments',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            73 => 
-            array (
+            ],
+            73 => [
                 'option_id' => 74,
                 'option_name' => 'comments_per_page',
                 'option_value' => '50',
                 'autoload' => 'yes',
-            ),
-            74 => 
-            array (
+            ],
+            74 => [
                 'option_id' => 75,
                 'option_name' => 'default_comments_page',
                 'option_value' => 'newest',
                 'autoload' => 'yes',
-            ),
-            75 => 
-            array (
+            ],
+            75 => [
                 'option_id' => 76,
                 'option_name' => 'comment_order',
                 'option_value' => 'asc',
                 'autoload' => 'yes',
-            ),
-            76 => 
-            array (
+            ],
+            76 => [
                 'option_id' => 77,
                 'option_name' => 'sticky_posts',
                 'option_value' => 'a:0:{}',
                 'autoload' => 'yes',
-            ),
-            77 => 
-            array (
+            ],
+            77 => [
                 'option_id' => 78,
                 'option_name' => 'widget_categories',
                 'option_value' => 'a:2:{i:2;a:4:{s:5:"title";s:0:"";s:5:"count";i:0;s:12:"hierarchical";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            78 => 
-            array (
+            ],
+            78 => [
                 'option_id' => 79,
                 'option_name' => 'widget_text',
                 'option_value' => 'a:0:{}',
                 'autoload' => 'yes',
-            ),
-            79 => 
-            array (
+            ],
+            79 => [
                 'option_id' => 80,
                 'option_name' => 'widget_rss',
                 'option_value' => 'a:0:{}',
                 'autoload' => 'yes',
-            ),
-            80 => 
-            array (
+            ],
+            80 => [
                 'option_id' => 81,
                 'option_name' => 'uninstall_plugins',
                 'option_value' => 'a:0:{}',
                 'autoload' => 'no',
-            ),
-            81 => 
-            array (
+            ],
+            81 => [
                 'option_id' => 82,
                 'option_name' => 'timezone_string',
                 'option_value' => 'Asia/Tokyo',
                 'autoload' => 'yes',
-            ),
-            82 => 
-            array (
+            ],
+            82 => [
                 'option_id' => 83,
                 'option_name' => 'page_for_posts',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            83 => 
-            array (
+            ],
+            83 => [
                 'option_id' => 84,
                 'option_name' => 'page_on_front',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            84 => 
-            array (
+            ],
+            84 => [
                 'option_id' => 85,
                 'option_name' => 'default_post_format',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            85 => 
-            array (
+            ],
+            85 => [
                 'option_id' => 86,
                 'option_name' => 'link_manager_enabled',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            86 => 
-            array (
+            ],
+            86 => [
                 'option_id' => 87,
                 'option_name' => 'finished_splitting_shared_terms',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            87 => 
-            array (
+            ],
+            87 => [
                 'option_id' => 88,
                 'option_name' => 'site_icon',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            88 => 
-            array (
+            ],
+            88 => [
                 'option_id' => 89,
                 'option_name' => 'medium_large_size_w',
                 'option_value' => '768',
                 'autoload' => 'yes',
-            ),
-            89 => 
-            array (
+            ],
+            89 => [
                 'option_id' => 90,
                 'option_name' => 'medium_large_size_h',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            90 => 
-            array (
+            ],
+            90 => [
                 'option_id' => 91,
                 'option_name' => 'wp_page_for_privacy_policy',
                 'option_value' => '3',
                 'autoload' => 'yes',
-            ),
-            91 => 
-            array (
+            ],
+            91 => [
                 'option_id' => 92,
                 'option_name' => 'show_comments_cookies_opt_in',
                 'option_value' => '0',
                 'autoload' => 'yes',
-            ),
-            92 => 
-            array (
+            ],
+            92 => [
                 'option_id' => 93,
                 'option_name' => 'initial_db_version',
                 'option_value' => '43764',
                 'autoload' => 'yes',
-            ),
-            93 => 
-            array (
+            ],
+            93 => [
                 'option_id' => 94,
                 'option_name' => 'wp_user_roles',
                 'option_value' => 'a:5:{s:13:"administrator";a:2:{s:4:"name";s:13:"Administrator";s:12:"capabilities";a:61:{s:13:"switch_themes";b:1;s:11:"edit_themes";b:1;s:16:"activate_plugins";b:1;s:12:"edit_plugins";b:1;s:10:"edit_users";b:1;s:10:"edit_files";b:1;s:14:"manage_options";b:1;s:17:"moderate_comments";b:1;s:17:"manage_categories";b:1;s:12:"manage_links";b:1;s:12:"upload_files";b:1;s:6:"import";b:1;s:15:"unfiltered_html";b:1;s:10:"edit_posts";b:1;s:17:"edit_others_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:10:"edit_pages";b:1;s:4:"read";b:1;s:8:"level_10";b:1;s:7:"level_9";b:1;s:7:"level_8";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:17:"edit_others_pages";b:1;s:20:"edit_published_pages";b:1;s:13:"publish_pages";b:1;s:12:"delete_pages";b:1;s:19:"delete_others_pages";b:1;s:22:"delete_published_pages";b:1;s:12:"delete_posts";b:1;s:19:"delete_others_posts";b:1;s:22:"delete_published_posts";b:1;s:20:"delete_private_posts";b:1;s:18:"edit_private_posts";b:1;s:18:"read_private_posts";b:1;s:20:"delete_private_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"read_private_pages";b:1;s:12:"delete_users";b:1;s:12:"create_users";b:1;s:17:"unfiltered_upload";b:1;s:14:"edit_dashboard";b:1;s:14:"update_plugins";b:1;s:14:"delete_plugins";b:1;s:15:"install_plugins";b:1;s:13:"update_themes";b:1;s:14:"install_themes";b:1;s:11:"update_core";b:1;s:10:"list_users";b:1;s:12:"remove_users";b:1;s:13:"promote_users";b:1;s:18:"edit_theme_options";b:1;s:13:"delete_themes";b:1;s:6:"export";b:1;}}s:6:"editor";a:2:{s:4:"name";s:6:"Editor";s:12:"capabilities";a:34:{s:17:"moderate_comments";b:1;s:17:"manage_categories";b:1;s:12:"manage_links";b:1;s:12:"upload_files";b:1;s:15:"unfiltered_html";b:1;s:10:"edit_posts";b:1;s:17:"edit_others_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:10:"edit_pages";b:1;s:4:"read";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:17:"edit_others_pages";b:1;s:20:"edit_published_pages";b:1;s:13:"publish_pages";b:1;s:12:"delete_pages";b:1;s:19:"delete_others_pages";b:1;s:22:"delete_published_pages";b:1;s:12:"delete_posts";b:1;s:19:"delete_others_posts";b:1;s:22:"delete_published_posts";b:1;s:20:"delete_private_posts";b:1;s:18:"edit_private_posts";b:1;s:18:"read_private_posts";b:1;s:20:"delete_private_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"read_private_pages";b:1;}}s:6:"author";a:2:{s:4:"name";s:6:"Author";s:12:"capabilities";a:10:{s:12:"upload_files";b:1;s:10:"edit_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:4:"read";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:12:"delete_posts";b:1;s:22:"delete_published_posts";b:1;}}s:11:"contributor";a:2:{s:4:"name";s:11:"Contributor";s:12:"capabilities";a:5:{s:10:"edit_posts";b:1;s:4:"read";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:12:"delete_posts";b:1;}}s:10:"subscriber";a:2:{s:4:"name";s:10:"Subscriber";s:12:"capabilities";a:2:{s:4:"read";b:1;s:7:"level_0";b:1;}}}',
                 'autoload' => 'yes',
-            ),
-            94 => 
-            array (
+            ],
+            94 => [
                 'option_id' => 95,
                 'option_name' => 'fresh_site',
                 'option_value' => '1',
                 'autoload' => 'yes',
-            ),
-            95 => 
-            array (
+            ],
+            95 => [
                 'option_id' => 96,
                 'option_name' => 'WPLANG',
                 'option_value' => 'ja',
                 'autoload' => 'yes',
-            ),
-            96 => 
-            array (
+            ],
+            96 => [
                 'option_id' => 97,
                 'option_name' => 'widget_search',
                 'option_value' => 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            97 => 
-            array (
+            ],
+            97 => [
                 'option_id' => 98,
                 'option_name' => 'widget_recent-posts',
                 'option_value' => 'a:2:{i:2;a:2:{s:5:"title";s:0:"";s:6:"number";i:5;}s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            98 => 
-            array (
+            ],
+            98 => [
                 'option_id' => 99,
                 'option_name' => 'widget_recent-comments',
                 'option_value' => 'a:2:{i:2;a:2:{s:5:"title";s:0:"";s:6:"number";i:5;}s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            99 => 
-            array (
+            ],
+            99 => [
                 'option_id' => 100,
                 'option_name' => 'widget_archives',
                 'option_value' => 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            100 => 
-            array (
+            ],
+            100 => [
                 'option_id' => 101,
                 'option_name' => 'widget_meta',
                 'option_value' => 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            101 => 
-            array (
+            ],
+            101 => [
                 'option_id' => 102,
                 'option_name' => 'sidebars_widgets',
                 'option_value' => 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}',
                 'autoload' => 'yes',
-            ),
-            102 => 
-            array (
+            ],
+            102 => [
                 'option_id' => 103,
                 'option_name' => 'widget_pages',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            103 => 
-            array (
+            ],
+            103 => [
                 'option_id' => 104,
                 'option_name' => 'widget_calendar',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            104 => 
-            array (
+            ],
+            104 => [
                 'option_id' => 105,
                 'option_name' => 'widget_media_audio',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            105 => 
-            array (
+            ],
+            105 => [
                 'option_id' => 106,
                 'option_name' => 'widget_media_image',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            106 => 
-            array (
+            ],
+            106 => [
                 'option_id' => 107,
                 'option_name' => 'widget_media_gallery',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            107 => 
-            array (
+            ],
+            107 => [
                 'option_id' => 108,
                 'option_name' => 'widget_media_video',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            108 => 
-            array (
+            ],
+            108 => [
                 'option_id' => 109,
                 'option_name' => 'widget_tag_cloud',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            109 => 
-            array (
+            ],
+            109 => [
                 'option_id' => 110,
                 'option_name' => 'widget_nav_menu',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            110 => 
-            array (
+            ],
+            110 => [
                 'option_id' => 111,
                 'option_name' => 'widget_custom_html',
                 'option_value' => 'a:1:{s:12:"_multiwidget";i:1;}',
                 'autoload' => 'yes',
-            ),
-            111 => 
-            array (
+            ],
+            111 => [
                 'option_id' => 112,
                 'option_name' => 'cron',
                 'option_value' => 'a:4:{i:1559438673;a:4:{s:34:"wp_privacy_delete_old_export_files";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1559438678;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1559438704;a:1:{s:32:"recovery_mode_clean_expired_keys";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}',
                 'autoload' => 'yes',
-            ),
-            112 => 
-            array (
+            ],
+            112 => [
                 'option_id' => 113,
                 'option_name' => '_transient_doing_cron',
                 'option_value' => '1559439426.6014430522918701171875',
                 'autoload' => 'yes',
-            ),
-            113 => 
-            array (
+            ],
+            113 => [
                 'option_id' => 116,
                 'option_name' => '_site_transient_timeout_theme_roots',
                 'option_value' => '1559440480',
                 'autoload' => 'no',
-            ),
-            114 => 
-            array (
+            ],
+            114 => [
                 'option_id' => 117,
                 'option_name' => '_site_transient_theme_roots',
                 'option_value' => 'a:4:{s:31:"oki2a24com-twentynineteen-child";s:7:"/themes";s:14:"twentynineteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}',
                 'autoload' => 'no',
-            ),
-            115 => 
-            array (
+            ],
+            115 => [
                 'option_id' => 119,
                 'option_name' => '_site_transient_timeout_browser_675c74d5f114ba25a49fb0f4cb02f70f',
                 'option_value' => '1560043482',
                 'autoload' => 'no',
-            ),
-            116 => 
-            array (
+            ],
+            116 => [
                 'option_id' => 120,
                 'option_name' => '_site_transient_browser_675c74d5f114ba25a49fb0f4cb02f70f',
                 'option_value' => 'a:10:{s:4:"name";s:6:"Chrome";s:7:"version";s:13:"74.0.3729.169";s:8:"platform";s:9:"Macintosh";s:10:"update_url";s:29:"https://www.google.com/chrome";s:7:"img_src";s:43:"http://s.w.org/images/browsers/chrome.png?1";s:11:"img_src_ssl";s:44:"https://s.w.org/images/browsers/chrome.png?1";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;s:6:"mobile";b:0;}',
                 'autoload' => 'no',
-            ),
-            117 => 
-            array (
+            ],
+            117 => [
                 'option_id' => 122,
                 'option_name' => '_site_transient_timeout_community-events-ac623c97556af98b0c073d91bd271cb2',
                 'option_value' => '1559481883',
                 'autoload' => 'no',
-            ),
-            118 => 
-            array (
+            ],
+            118 => [
                 'option_id' => 123,
                 'option_name' => '_site_transient_community-events-ac623c97556af98b0c073d91bd271cb2',
                 'option_value' => 'a:2:{s:8:"location";a:1:{s:2:"ip";s:13:"192.168.176.0";}s:6:"events";a:2:{i:0;a:7:{s:4:"type";s:8:"wordcamp";s:5:"title";s:15:"WordCamp Europe";s:3:"url";s:33:"https://2019.europe.wordcamp.org/";s:6:"meetup";s:0:"";s:10:"meetup_url";s:0:"";s:4:"date";s:19:"2019-06-20 00:00:00";s:8:"location";a:4:{s:8:"location";s:15:"Berlin, Germany";s:7:"country";s:2:"DE";s:8:"latitude";d:52.50697;s:9:"longitude";d:13.2843064;}}i:1;a:7:{s:4:"type";s:6:"meetup";s:5:"title";s:43:"札幌（Sapporo） WordPress Meetup vol.06";s:3:"url";s:65:"https://www.meetup.com/Sapporo-WordPress-Meetup/events/261640934/";s:6:"meetup";s:24:"Sapporo WordPress Meetup";s:10:"meetup_url";s:48:"https://www.meetup.com/Sapporo-WordPress-Meetup/";s:4:"date";s:19:"2019-06-12 19:00:00";s:8:"location";a:4:{s:8:"location";s:14:"Sapporo, Japan";s:7:"country";s:2:"jp";s:8:"latitude";d:43.06208;s:9:"longitude";d:141.354355;}}}}',
                 'autoload' => 'no',
-            ),
-            119 => 
-            array (
+            ],
+            119 => [
                 'option_id' => 124,
                 'option_name' => '_transient_timeout_feed_ab995de7a5278071ed721c721c891aed',
                 'option_value' => '1559481884',
                 'autoload' => 'no',
-            ),
-            120 => 
-            array (
+            ],
+            120 => [
                 'option_id' => 125,
                 'option_name' => '_transient_feed_ab995de7a5278071ed721c721c891aed',
                 'option_value' => 'a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:3:"
@@ -1850,30 +1726,26 @@ class WpOptionsTableSeeder extends Seeder
 hourly	";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:15:"updateFrequency";a:1:{i:0;a:5:{s:4:"data";s:4:"
 1	";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";O:42:"Requests_Utility_CaseInsensitiveDictionary":1:{s:7:"' . "\0" . '*' . "\0" . 'data";a:8:{s:6:"server";s:5:"nginx";s:4:"date";s:29:"Sun, 02 Jun 2019 01:24:43 GMT";s:12:"content-type";s:34:"application/rss+xml; charset=UTF-8";s:6:"x-olaf";s:3:"⛄";s:13:"last-modified";s:29:"Wed, 22 May 2019 07:22:06 GMT";s:4:"link";s:61:"<https://ja.wordpress.org/wp-json/>; rel="https://api.w.org/"";s:15:"x-frame-options";s:10:"SAMEORIGIN";s:4:"x-nc";s:9:"HIT ord 2";}}s:5:"build";s:14:"20130911040210";}',
                 'autoload' => 'no',
-            ),
-            121 => 
-            array (
+            ],
+            121 => [
                 'option_id' => 126,
                 'option_name' => '_transient_timeout_feed_mod_ab995de7a5278071ed721c721c891aed',
                 'option_value' => '1559481884',
                 'autoload' => 'no',
-            ),
-            122 => 
-            array (
+            ],
+            122 => [
                 'option_id' => 127,
                 'option_name' => '_transient_feed_mod_ab995de7a5278071ed721c721c891aed',
                 'option_value' => '1559438684',
                 'autoload' => 'no',
-            ),
-            123 => 
-            array (
+            ],
+            123 => [
                 'option_id' => 128,
                 'option_name' => '_transient_timeout_feed_6f409681938158427d2ded6eb1b9ea27',
                 'option_value' => '1559481885',
                 'autoload' => 'no',
-            ),
-            124 => 
-            array (
+            ],
+            124 => [
                 'option_id' => 129,
                 'option_name' => '_transient_feed_6f409681938158427d2ded6eb1b9ea27',
                 'option_value' => 'a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:5:"
@@ -2123,114 +1995,97 @@ https化する作業が完了してしまえば、出ることはないと思い
 
 ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:2:"CG";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:4:"href";s:44:"https://ja.wordpress.org/support/forums/feed";s:3:"rel";s:4:"self";s:4:"type";s:19:"application/rss+xml";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";O:42:"Requests_Utility_CaseInsensitiveDictionary":1:{s:7:"' . "\0" . '*' . "\0" . 'data";a:7:{s:6:"server";s:5:"nginx";s:4:"date";s:29:"Sun, 02 Jun 2019 01:24:45 GMT";s:12:"content-type";s:34:"application/rss+xml; charset=UTF-8";s:6:"x-olaf";s:3:"⛄";s:12:"x-robots-tag";s:15:"noindex, follow";s:15:"x-frame-options";s:10:"SAMEORIGIN";s:4:"x-nc";s:9:"HIT ord 2";}}s:5:"build";s:14:"20130911040210";}',
                     'autoload' => 'no',
-                ),
-                125 => 
-                array (
+                ],
+                125 => [
                     'option_id' => 130,
                     'option_name' => '_transient_timeout_feed_mod_6f409681938158427d2ded6eb1b9ea27',
                     'option_value' => '1559481885',
                     'autoload' => 'no',
-                ),
-                126 => 
-                array (
+                ],
+                126 => [
                     'option_id' => 131,
                     'option_name' => '_transient_feed_mod_6f409681938158427d2ded6eb1b9ea27',
                     'option_value' => '1559438685',
                     'autoload' => 'no',
-                ),
-                127 => 
-                array (
+                ],
+                127 => [
                     'option_id' => 132,
                     'option_name' => '_transient_timeout_dash_v2_45827e8e892dd0b85803a110fad8690f',
                     'option_value' => '1559481885',
                     'autoload' => 'no',
-                ),
-                128 => 
-                array (
+                ],
+                128 => [
                     'option_id' => 133,
                     'option_name' => '_transient_dash_v2_45827e8e892dd0b85803a110fad8690f',
                     'option_value' => '<div class="rss-widget"><ul><li><a class=\'rsswidget\' href=\'https://ja.wordpress.org/2019/05/22/wordpress-5-2-1-maintenance-release/\'>WordPress 5.2.1 メンテナンスリリース</a></li></ul></div><div class="rss-widget"><ul><li><a class=\'rsswidget\' href=\'https://ja.wordpress.org/support/topic/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82/#post-236760\'>返信先: サイトにアクセスできません。</a></li><li><a class=\'rsswidget\' href=\'https://ja.wordpress.org/support/topic/5-2-1%E3%81%B8%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93/#post-236759\'>5.2.1へのアップデートができません</a></li><li><a class=\'rsswidget\' href=\'https://ja.wordpress.org/support/topic/%E8%A8%98%E4%BA%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E3%81%AE%E3%82%AB%E3%83%A9%E3%83%A0%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97/#post-236758\'>記事ページのギャラリーのカラムの表示がおかしい</a></li></ul></div>',
                     'autoload' => 'no',
-                ),
-                129 => 
-                array (
+                ],
+                129 => [
                     'option_id' => 137,
                     'option_name' => 'db_upgraded',
                     'option_value' => '',
                     'autoload' => 'yes',
-                ),
-                130 => 
-                array (
+                ],
+                130 => [
                     'option_id' => 138,
                     'option_name' => '_site_transient_update_core',
                     'option_value' => 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:62:"https://downloads.wordpress.org/release/ja/wordpress-5.2.1.zip";s:6:"locale";s:2:"ja";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:62:"https://downloads.wordpress.org/release/ja/wordpress-5.2.1.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"5.2.1";s:7:"version";s:5:"5.2.1";s:11:"php_version";s:6:"5.6.20";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"5.0";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1559438781;s:15:"version_checked";s:5:"5.2.1";s:12:"translations";a:0:{}}',
                     'autoload' => 'no',
-                ),
-                131 => 
-                array (
+                ],
+                131 => [
                     'option_id' => 141,
                     'option_name' => 'can_compress_scripts',
                     'option_value' => '0',
                     'autoload' => 'no',
-                ),
-                132 => 
-                array (
+                ],
+                132 => [
                     'option_id' => 142,
                     'option_name' => '_site_transient_timeout_php_check_f3408a2041a3252345cbba83e180fe85',
                     'option_value' => '1560043537',
                     'autoload' => 'no',
-                ),
-                133 => 
-                array (
+                ],
+                133 => [
                     'option_id' => 143,
                     'option_name' => '_site_transient_php_check_f3408a2041a3252345cbba83e180fe85',
                     'option_value' => 'a:5:{s:19:"recommended_version";s:3:"7.3";s:15:"minimum_version";s:6:"5.6.20";s:12:"is_supported";b:1;s:9:"is_secure";b:1;s:13:"is_acceptable";b:1;}',
                     'autoload' => 'no',
-                ),
-                134 => 
-                array (
+                ],
+                134 => [
                     'option_id' => 144,
                     'option_name' => '_transient_health-check-site-status-result',
                     'option_value' => '{"good":"7","recommended":"7","critical":"2"}',
                     'autoload' => 'yes',
-                ),
-                135 => 
-                array (
+                ],
+                135 => [
                     'option_id' => 145,
                     'option_name' => '_transient_timeout_plugin_slugs',
                     'option_value' => '1559525178',
                     'autoload' => 'no',
-                ),
-                136 => 
-                array (
+                ],
+                136 => [
                     'option_id' => 146,
                     'option_name' => '_transient_plugin_slugs',
                     'option_value' => 'a:2:{i:0;s:19:"akismet/akismet.php";i:1;s:9:"hello.php";}',
                     'autoload' => 'no',
-                ),
-                137 => 
-                array (
+                ],
+                137 => [
                     'option_id' => 147,
                     'option_name' => 'recently_activated',
                     'option_value' => 'a:0:{}',
                     'autoload' => 'yes',
-                ),
-                138 => 
-                array (
+                ],
+                138 => [
                     'option_id' => 148,
                     'option_name' => '_site_transient_update_plugins',
                     'option_value' => 'O:8:"stdClass":5:{s:12:"last_checked";i:1559438808;s:7:"checked";a:2:{s:19:"akismet/akismet.php";s:5:"4.1.2";s:21:"hello-dolly/hello.php";s:5:"1.7.2";}s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:19:"akismet/akismet.php";O:8:"stdClass":9:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"4.1.2";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.4.1.2.zip";s:5:"icons";a:2:{s:2:"2x";s:59:"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272";s:2:"1x";s:59:"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272";}s:7:"banners";a:1:{s:2:"1x";s:61:"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904";}s:11:"banners_rtl";a:0:{}}s:21:"hello-dolly/hello.php";O:8:"stdClass":9:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:21:"hello-dolly/hello.php";s:11:"new_version";s:5:"1.7.2";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:60:"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip";s:5:"icons";a:2:{s:2:"2x";s:64:"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855";s:2:"1x";s:64:"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855";}s:7:"banners";a:1:{s:2:"1x";s:66:"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855";}s:11:"banners_rtl";a:0:{}}}}',
                     'autoload' => 'no',
-                ),
-                139 => 
-                array (
+                ],
+                139 => [
                     'option_id' => 149,
                     'option_name' => '_site_transient_update_themes',
                     'option_value' => 'O:8:"stdClass":4:{s:12:"last_checked";i:1559438805;s:7:"checked";a:3:{s:14:"twentynineteen";s:3:"1.4";s:15:"twentyseventeen";s:3:"2.2";s:13:"twentysixteen";s:3:"2.0";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}',
                     'autoload' => 'no',
-                ),
-            ));
-        
-        
+                ],
+            ]);
     }
 }

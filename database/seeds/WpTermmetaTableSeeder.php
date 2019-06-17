@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class WpTermmetaTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,11 +11,6 @@ class WpTermmetaTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('wp_termmeta')->delete();
-        
-        
-        
     }
 }

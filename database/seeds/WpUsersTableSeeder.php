@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class WpUsersTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class WpUsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('wp_users')->delete();
-        
-        \DB::table('wp_users')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('wp_users')->insert([
+            0 => [
                 'ID' => 1,
                 'user_login' => 'sample',
                 'user_pass' => '$P$BiIwBLsjyq9SYmKP/knOvh6.6yLP6x1',
@@ -29,9 +25,7 @@ class WpUsersTableSeeder extends Seeder
                 'user_activation_key' => '',
                 'user_status' => 0,
                 'display_name' => 'sample',
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

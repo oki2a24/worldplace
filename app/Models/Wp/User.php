@@ -5,7 +5,7 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property integer $ID
+ * @property int $ID
  * @property string $user_login
  * @property string $user_pass
  * @property string $user_nicename
@@ -20,21 +20,21 @@ class User extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'wp_users';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'ID';
 
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -46,9 +46,8 @@ class User extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
-
 }

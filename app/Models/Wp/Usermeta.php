@@ -5,8 +5,8 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property integer $umeta_id
- * @property integer $user_id
+ * @property int $umeta_id
+ * @property int $user_id
  * @property string $meta_key
  * @property string $meta_value
  */
@@ -14,21 +14,21 @@ class Usermeta extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'wp_usermeta';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'umeta_id';
 
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -40,9 +40,8 @@ class Usermeta extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
-
 }

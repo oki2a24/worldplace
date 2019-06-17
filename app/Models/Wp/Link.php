@@ -5,14 +5,14 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property integer $link_id
+ * @property int $link_id
  * @property string $link_url
  * @property string $link_name
  * @property string $link_image
  * @property string $link_target
  * @property string $link_description
  * @property string $link_visible
- * @property integer $link_owner
+ * @property int $link_owner
  * @property int $link_rating
  * @property string $link_updated
  * @property string $link_rel
@@ -23,21 +23,21 @@ class Link extends Model
 {
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'wp_links';
 
     /**
      * The primary key for the model.
-     * 
+     *
      * @var string
      */
     protected $primaryKey = 'link_id';
 
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -49,9 +49,8 @@ class Link extends Model
 
     /**
      * Indicates if the model should be timestamped.
-     * 
+     *
      * @var bool
      */
     public $timestamps = false;
-
 }
