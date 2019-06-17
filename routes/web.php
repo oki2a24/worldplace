@@ -11,6 +11,11 @@
 |
 */
 
+Route::prefix('admin')->group(function () {
+    Route::resources([
+        'posts' => 'PostController'
+    ]);
+});
 Route::get('/', function () {
     return view('welcome');
 });
