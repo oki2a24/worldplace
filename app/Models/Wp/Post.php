@@ -2,6 +2,7 @@
 
 namespace App\Models\Wp;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -63,4 +64,14 @@ class Post extends Model
      * @var bool
      */
     public $timestamps = false;
+
+    /**
+     * 投稿種別が投稿のレコードに限定するクエリスコープです。
+     * @param Builder $query
+     * @return Builder
+     */
+    public function scopePostTypePost(Builder $query): Builder
+    {
+        return $query->where('post_type', 'post');
+    }
 }
