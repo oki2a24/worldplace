@@ -74,4 +74,22 @@ class Post extends Model
     {
         return $query->where('post_type', 'post');
     }
+
+    /**
+     * 投稿ステータスが管理画面の投稿一覧の "すべて" に表示するレコードに限定するクエリスコープです。
+     * @param Builder $query
+     * @return Builder
+     */
+    public function scopePostStatusAll(Builder $query): Builder
+    {
+        return $query->where(function ($query) {
+            $query
+            ->where('post_status', 'publish')
+            ->orWhere('post_status', 'future')
+            ->orWhere('post_status', 'draft')
+            ->orWhere('post_status', 'pending')
+            ->orWhere('post_status', 'private')
+            ->orWhere('post_status', 'trash');
+        });
+    }
 }
