@@ -20,4 +20,23 @@ class Post extends WpPost
             $builder->where('post_type', 'post');
         });
     }
+
+    /**
+     * 投稿ステータスの説明を返します。
+     *
+     * @return string
+     */
+    public function getPostStatusDescriptionAttribute(): string
+    {
+        $statuses = [
+            'draft'   => '下書き',
+            'future'   => '予約済み',
+            'pending' => 'レビュー待ち',
+            'private' => '非公開',
+            'publish' => '公開済み',
+            'trash' => 'ゴミ箱',
+        ];
+
+        return $statuses[$this->post_status];
+    }
 }

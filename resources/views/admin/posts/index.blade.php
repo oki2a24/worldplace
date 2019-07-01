@@ -26,7 +26,7 @@
         @foreach ($posts as $post)
         <tr>
           <th scope="row">{{ $post->ID }}</th>
-          <td>{{ $post->post_title }}</td>
+          <td>{{ $post->post_title }} - {{ $post->post_status_description }}</td>
           <td>{{ $post->post_author }}</td>
           <td>categories</td>
           <td>tags</td>
