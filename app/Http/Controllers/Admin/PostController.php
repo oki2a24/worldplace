@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Wp\Post;
+use App\Models\Wp\PostType\Post as PostTypePost;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.posts.index', [
+            'posts' => PostTypePost::postStatusAll()->get(),
+        ]);
     }
 
     /**
