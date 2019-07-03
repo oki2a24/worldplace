@@ -27,7 +27,7 @@
         <tr>
           <th scope="row">{{ $post->ID }}</th>
           <td>{{ $post->post_title }} - {{ $post->post_status_description }}</td>
-          <td>{{ $post->post_author }}</td>
+          <td>{{ $post->user()->first()->display_name }}</td>
           <td>categories</td>
           <td>tags</td>
           <td>{{ $post->comment_count }}</td>

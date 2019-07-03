@@ -4,6 +4,7 @@ namespace App\Models\Wp;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @property int $ID
@@ -64,6 +65,15 @@ class Post extends Model
      * @var bool
      */
     public $timestamps = false;
+
+    /**
+     * この投稿の投稿者を取得します。
+     * @return BelongsTo
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo('App\Models\WP\User', 'post_author', 'ID');
+    }
 
     /**
      * 投稿種別が投稿のレコードに限定するクエリスコープです。
