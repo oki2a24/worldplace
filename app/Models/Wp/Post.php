@@ -92,4 +92,14 @@ class Post extends Model
             ->orWhere('post_status', 'trash');
         });
     }
+
+    /**
+     * 投稿日時の降順に並び替えるクエリスコープです。
+     * @param Builder $query
+     * @return Builder
+     */
+    public function scopeOrderByPostDateDesc(Builder $query): Builder
+    {
+        return $query->orderBy('post_date', 'desc');
+    }
 }
