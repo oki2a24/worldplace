@@ -17,7 +17,7 @@ class PostController extends Controller
     public function index()
     {
         return view('admin.posts.index', [
-            'posts' => PostTypePost::postStatusAll()->orderByPostDateDesc()->get(),
+            'posts' => PostTypePost::with('user')->postStatusAll()->orderByPostDateDesc()->get(),
         ]);
     }
 
