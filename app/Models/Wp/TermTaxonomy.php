@@ -3,6 +3,7 @@
 namespace App\Models\Wp;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @property int $term_taxonomy_id
@@ -46,4 +47,14 @@ class TermTaxonomy extends Model
      * @var bool
      */
     public $timestamps = false;
+
+    /**
+     * この TermTaxonomy を所有する Term を取得します。
+     *
+     * @return BelongsTo
+     */
+    public function term(): BelongsTo
+    {
+        return $this->belongsTo('App\Models\Wp\Term', 'term_id', 'term_id');
+    }
 }
