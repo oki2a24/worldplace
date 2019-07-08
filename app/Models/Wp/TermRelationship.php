@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $term_taxonomy_id
  * @property int $term_order
  */
-class Term_relationship extends Model
+class TermRelationship extends Model
 {
     /**
      * The table associated with the model.

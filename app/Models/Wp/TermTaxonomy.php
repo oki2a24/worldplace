@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $parent
  * @property int $count
  */
-class Term_taxonomy extends Model
+class TermTaxonomy extends Model
 {
     /**
      * The table associated with the model.
