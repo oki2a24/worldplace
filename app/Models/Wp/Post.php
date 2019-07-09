@@ -5,6 +5,7 @@ namespace App\Models\Wp;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * @property int $ID
@@ -73,6 +74,23 @@ class Post extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo('App\Models\WP\User', 'post_author', 'ID');
+    }
+
+    /**
+     * この Post に所属する TermTaxonomy を取得します。
+     *
+     * @return BelongsToMany
+     */
+    public function termTaxonomies(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            'App\Models\Wp\TermTaxonomy',
+            'wp_term_relationships',
+            'object_id',
+            'term_taxonomy_id',
+            'ID',
+            'term_taxonomy_id'
+        );
     }
 
     /**
