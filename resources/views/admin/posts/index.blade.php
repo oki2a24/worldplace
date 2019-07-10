@@ -28,7 +28,7 @@
           <th scope="row">{{ $post->ID }}</th>
           <td>{{ $post->post_title }} - {{ $post->post_status_description }}</td>
           <td>{{ $post->user->display_name }}</td>
-          <td>categories</td>
+          <td>{{ $post->categories->implode('name', ', ') }}</td>
           <td>tags</td>
           <td>{{ $post->comment_count }}</td>
           <td>{{ $post->post_date }}</td>
