@@ -4,6 +4,7 @@ namespace App\Models\Wp\PostType;
 
 use App\Models\Wp\Post as WpPost;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Post extends WpPost
 {
@@ -19,6 +20,23 @@ class Post extends WpPost
         static::addGlobalScope('postTypePost', function (Builder $builder) {
             $builder->where('post_type', 'post');
         });
+    }
+
+    /**
+     * この投稿に所属するカテゴリーを取得します。
+     *
+     * @return BelongsToMany
+     */
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            'App\Models\Wp\Taxonomy\Category',
+            'wp_term_relationships',
+            'object_id',
+            'term_taxonomy_id',
+            'ID',
+            'term_taxonomy_id'
+        );
     }
 
     /**
