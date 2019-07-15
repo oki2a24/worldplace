@@ -40,6 +40,23 @@ class Post extends WpPost
     }
 
     /**
+     * この投稿に所属するカテゴリーを取得します。
+     *
+     * @return BelongsToMany
+     */
+    public function postTags(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            'App\Models\Wp\Taxonomy\PostTag',
+            'wp_term_relationships',
+            'object_id',
+            'term_taxonomy_id',
+            'ID',
+            'term_taxonomy_id'
+        );
+    }
+
+    /**
      * 投稿ステータスの説明を返します。
      *
      * @return string
