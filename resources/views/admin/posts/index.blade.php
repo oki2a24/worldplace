@@ -29,7 +29,7 @@
           <td>{{ $post->post_title }} - {{ $post->post_status_description }}</td>
           <td>{{ $post->user->display_name }}</td>
           <td>{{ $post->categories->implode('name', ', ') }}</td>
-          <td>tags</td>
+          <td>{{ $post->postTags->implode('name', ', ') }}</td>
           <td>{{ $post->comment_count }}</td>
           <td>{{ $post->post_date }}</td>
         </tr>

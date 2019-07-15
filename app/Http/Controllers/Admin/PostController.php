@@ -21,6 +21,8 @@ class PostController extends Controller
                 'user',
                 'categories',
                 'categories.term',
+                'postTags',
+                'postTags.term',
             ])
             ->postStatusAll()
             ->orderByPostDateDesc()
