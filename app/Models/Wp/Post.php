@@ -67,6 +67,15 @@ class Post extends Model
     public $timestamps = false;
 
     /**
+     * 日付を変形する属性
+     *
+     * @var array
+     */
+    protected $dates = [
+        'post_date',
+    ];
+
+    /**
      * この投稿の投稿者を取得します。
      * @return BelongsTo
      */

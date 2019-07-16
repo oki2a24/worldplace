@@ -31,7 +31,7 @@
           <td>{{ $post->categories->implode('name', ', ') }}</td>
           <td>{{ $post->postTags->implode('name', ', ') }}</td>
           <td>{{ $post->comment_count }}</td>
-          <td>{{ $post->post_date }}</td>
+          <td>{{ $post->post_date->format('Y年m月d日') }}</td>
         </tr>
         @endforeach
       </tbody>
