@@ -15,7 +15,7 @@ class CreateWpPostmetaTable extends Migration
         Schema::create('wp_postmeta', function (Blueprint $table) {
             $table->bigInteger('meta_id', true)->unsigned();
             $table->bigInteger('post_id')->unsigned()->default(0)->index('post_id');
-            $table->string('meta_key')->nullable()->index('meta_key');
+            $table->string('meta_key')->nullable()->index();
             $table->longText('meta_value')->nullable();
         });
     }
