@@ -12,7 +12,6 @@ class PostControllerTest extends TestCase
 
     /**
      * 各テスト実行前に呼ばれる。
-     *
      */
     protected function setUp(): void
     {
@@ -75,5 +74,29 @@ class PostControllerTest extends TestCase
             ->assertSee($trash->post_title)
             ->assertDontSee($autoDraft->post_title)
             ->assertDontSee($inherit->post_title);
+    }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function post_dateの降順に表示されること()
+    {
+        $posts = factory(Post::class, 'post_type_post', 3)->create();
+        $expects = $posts
+            ->sortByDesc(function ($item) {
+                return $item->post_date;
+            })
+            ->values()
+            ->pluck('post_title')
+            ->all();
+
+        $response = $this->get('/admin/posts');
+
+        $response
+            ->assertViewIs('admin.posts.index')
+            ->assertStatus(200)
+            ->assertSeeInOrder($expects);
     }
 }
