@@ -6,26 +6,27 @@ use App\Models\Wp\Post;
 use App\Models\Wp\PostType\Post as PostTypePost;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\View\View;
 
 class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return View
      */
-    public function index()
+    public function index(): View
     {
         $posts = PostTypePost
-            ::with([
+            ::postStatusAll()
+            ->orderByPostDateDesc()
+            ->with([
                 'user',
                 'categories',
                 'categories.term',
                 'postTags',
                 'postTags.term',
             ])
-            ->postStatusAll()
-            ->orderByPostDateDesc()
             ->get();
 
         return view('admin.posts.index', [
