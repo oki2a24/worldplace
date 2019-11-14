@@ -12,6 +12,7 @@
 */
 
 Route::prefix('admin')->group(function () {
+    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
     Route::namespace('Admin')->group(function () {
         Route::resources([
             'posts' => 'PostController'
@@ -21,3 +22,7 @@ Route::prefix('admin')->group(function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
